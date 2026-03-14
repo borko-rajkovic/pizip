@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: PiZip
+
+pizip:
+  # Default search mode: FAST | BALANCED | BEST
+  # FAST - quick encoding, ~5 Pi candidates checked per token
+  # BALANCED - good default, ~50 candidates
+  # BEST - optimal (DP), checks all candidates (slowest)
+  default-search-mode: BALANCED
+  web:
+    enabled: true
+    path: /api/pizip
